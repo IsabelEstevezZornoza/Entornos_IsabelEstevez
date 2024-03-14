@@ -5,7 +5,7 @@ import kotlin.random.Random
 
 fun main(args: Array<String>) {
     var m = Array(4) { Array<Int>(4) { Random.nextInt(1, 9)} }
-    var sumaFilas = Array(m.size){0}
+    var sumaFilas = sumarFilas(m)
     var sumaColum = Array(m[0].size){0}
 
 
@@ -34,6 +34,11 @@ fun main(args: Array<String>) {
     println(Arrays.toString(sumaColum))
 
 
+}
+
+private fun sumarFilas(m: Array<Array<Int>>): Array<Int> {
+    var sumaFilas = Array(m.size) { 0 }
+    return sumaFilas
 }
 
 
