@@ -40,3 +40,9 @@ bin/
 
 ### Mac OS ###
 .DS_Store
+
+# Ignorar archivos compilados
+*.class
+
+#Ignorar la carpeta Isabel
+/Isabel/
