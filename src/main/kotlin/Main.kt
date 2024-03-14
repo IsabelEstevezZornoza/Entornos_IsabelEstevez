@@ -15,16 +15,16 @@ fun main(args: Array<String>) {
         }
         println()
     }
-    var f: Int = 0
-    var c: Int = 0
+    var filas: Int = 0
+    var columnas: Int = 0
 
-    while (f < m.size){
-        while (c < m[0].size){
-            sumaFilas[f] += m[f][c]
-            c++
+    while (filas < m.size){
+        while (columnas < m[0].size){
+            sumaFilas[filas] += m[filas][columnas]
+            columnas++
         }
-        c = 0
-        f++
+        columnas = 0
+        filas++
     }
 
     sumaColumnas(m,sumaColum)
